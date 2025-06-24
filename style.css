@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Latar belakang abu-abu muda */
+}
+
+.wrapper {
+    width: 960px; /* Lebar total konten */
+    margin: 20px auto; /* Pusatkan konten di tengah halaman */
+    background-color: #fff; /* Latar belakang putih untuk konten utama */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan tipis */
+    overflow: hidden; /* Penting untuk float */
+}
+
+header {
+    background-color: #A080C0; /* Warna ungu untuk header dan nav */
+    padding-bottom: 5px; /* Sedikit jarak di bawah gambar header */
+}
+
+.header-image img {
+    display: block;
+    width: 100%; /* Gambar header memenuhi lebar */
+    height: auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 5px 0;
+    list-style: none; /* Hilangkan bullet */
+    display: flex; /* Buat menu sejajar */
+    justify-content: center; /* Pusatkan menu */
+}
+
+nav ul li {
+    margin: 0 15px; /* Jarak antar item menu */
+}
+
+nav ul li a {
+    text-decoration: none; /* Hilangkan garis bawah link */
+    color: #fff; /* Warna teks menu putih */
+    padding: 8px 12px;
+    display: block;
+}
+
+nav ul li a.current {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1); /* Latar belakang sedikit gelap untuk menu aktif */
+    border-radius: 3px;
+}
+
+/* Tata Letak Konten Utama (Main) dan Sidebar */
+.container {
+    display: flex; /* Menggunakan Flexbox untuk tata letak kolom */
+    padding: 20px;
+}
+
+.utama {
+    flex: 2; /* Kolom utama (kiri) mengambil 2 bagian */
+    margin-right: 20px; /* Jarak dengan sidebar */
+}
+
+.utama article {
+    margin-bottom: 20px;
+    border: 1px solid #eee; /* Garis tepi tipis */
+    padding: 15px;
+    background-color: #fff;
+    overflow: hidden; /* Agar gambar float tidak keluar */
+}
+
+.utama figure {
+    float: left; /* Gambar mengapung ke kiri teks */
+    margin: 0 15px 10px 0; /* Jarak kanan dan bawah gambar */
+    border: 1px solid #ddd; /* Garis tepi gambar */
+    padding: 5px;
+    background-color: #fff;
+}
+
+.utama figure img {
+    width: 290px; /* Lebar gambar sesuai modul */
+    height: 190px; /* Tinggi gambar sesuai modul */
+    display: block;
+}
+
+.utama figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.utama hgroup h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.utama hgroup h3 {
+    color: #880000; /* Warna merah marun */
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.utama p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #444;
+}
+
+aside {
+    flex: 1; /* Sidebar (kanan) mengambil 1 bagian */
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+aside h3 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 0;
+    color: #333;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 8px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #007bff; /* Warna biru untuk link sidebar */
+}
+
+footer {
+    background-color: #333; /* Warna gelap untuk footer */
+    color: #fff; /* Teks putih di footer */
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
